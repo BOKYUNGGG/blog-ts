@@ -1,21 +1,24 @@
-import React from 'react';
-import Counter from './component/Counter';
-import MyForm from './component/MyForm';
+import Header from "./component/Header"
+import { MainRoutes } from "./Routes/MainRoutes"
+import styled from "styled-components"
+import './App.css'
 
 
-const App: React.FC = () =>{
-
-  const onSubmit = (form: {name : string, description: string}) => {
-    console.log(form)
-  }
-  return (
-    <div>
-      Hello, World
-      <Counter/>
-      <MyForm onSubmit={onSubmit}/>
-    </div>
-  )
-  
+export const App = () => {
+    
+    return (
+        <Wrapper>
+            <Header className="Header"></Header>
+            <div>
+                <MainRoutes className="Main"></MainRoutes>
+            </div>
+        </Wrapper>
+    )
 }
-
 export default App
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+`
