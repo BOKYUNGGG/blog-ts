@@ -44,6 +44,7 @@ const HomePage = (props : Props) => {
                 <Section.Paragraph>
                     개발자는 코드로 말할 줄 알아야 합니다. 전체를 보는 눈을 기르기 위한 마크다운과 부분적인 설명을 위한 주석을 다는 습관을 갖고 있습니다. 저의 깃허브 문서에서 확인해보세요.
                 </Section.Paragraph>
+                <Button size='small'>확인하러 가기!</Button>
             </Section>
 
             {/* 도구 */}
@@ -57,6 +58,7 @@ const HomePage = (props : Props) => {
                 <Section.Paragraph>
                     Web Frontend Framework, Design System with Framer, DevOps for WebPage
                 </Section.Paragraph>
+                <Button size='large'>확인하러 가기!</Button>
             </Section>
 
         </Wrapper>
